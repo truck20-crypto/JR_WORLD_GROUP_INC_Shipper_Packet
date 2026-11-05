@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JR World Group Inc | Freight brokerage in all 50 states</title>
+<meta name="description" content="Licensed freight broker (MC 1469441, USDOT 3949658). Dry van, flatbed, stepdeck, reefer, LTL, heavy haul and cross-border freight with 24/7 tracking.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#ecebe6;--surface:#fbfaf6;--ink:#17191d;--muted:#51565e;--line:#c9c7bd;--link:#0a6b47;--green:#0a6b47;--yellow:#f2c200;--road:#17191d;--paint:#fbfaf6;--dim:#c4c7cd;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101215;--surface:#171a1f;--ink:#f1f0ea;--muted:#a3a9b3;--line:#2b3038;--link:#5fd0a0;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101215;--surface:#171a1f;--ink:#f1f0ea;--muted:#a3a9b3;--line:#2b3038;--link:#5fd0a0;color-scheme:dark}
+html{background:var(--road);scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Overpass",system-ui,"Segoe UI",Arial,sans-serif;font-size:1.0625rem;line-height:1.6}
+a{color:var(--link)}
+a:focus-visible{outline:3px solid #2f7df6;outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* hero */
+.hero{background:var(--road);color:var(--paint)}
+.hero::after,.contact::before{content:"";display:block;height:6px;background:repeating-linear-gradient(90deg,var(--yellow) 0 44px,transparent 44px 80px)}
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--paint);text-decoration:none}
+.mark{background:var(--yellow);color:#17191d;padding:2px 8px;border-radius:3px;font-weight:800;letter-spacing:.02em}
+.nav{display:flex;align-items:center;gap:22px}
+.nav a{color:var(--dim);text-decoration:none;font-weight:600}
+.nav a:hover{color:var(--paint);text-decoration:underline}
+.btn{display:inline-block;padding:12px 20px;border-radius:4px;font-weight:800;text-decoration:none;border:2px solid var(--yellow)}
+.btn.y{background:var(--yellow);color:#17191d}
+.btn.o{color:var(--paint)}
+.btn:hover{filter:brightness(1.08)}
+.nav .btn{padding:8px 14px;color:#17191d}
+.nav .btn:hover{text-decoration:none;color:#17191d}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding:44px 0 68px}
+h1{font-size:clamp(2.4rem,6vw,4.3rem);line-height:1.02;letter-spacing:-.015em;font-weight:800;margin:0 0 20px}
+.sub{color:var(--dim);max-width:50ch;font-size:1.15rem;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+
+/* the highway sign */
+.sign{background:var(--green);color:#fff;border-radius:18px;padding:9px;box-shadow:0 0 0 3px #fff}
+.sign-in{border:3px solid #fff;border-radius:11px;padding:22px 24px 20px}
+.sign p{margin:0}
+.s-name{font-weight:600;font-size:1rem;opacity:.92}
+.s-id{font-size:clamp(1.9rem,4.4vw,2.7rem);font-weight:800;line-height:1.1;margin-top:6px}
+.s-id small{display:block;font-size:.85rem;font-weight:600;opacity:.88;margin-bottom:2px}
+.s-rule{border:0;border-top:3px solid #fff;margin:18px 0 14px}
+.s-line{font-weight:800;font-size:1.15rem}
+.plate{display:inline-block;margin-top:14px;background:var(--yellow);color:#17191d;font-weight:800;padding:4px 12px;border-radius:4px}
+
+/* sections */
+.sec{padding:76px 0 0}
+h2{font-size:clamp(1.7rem,3.6vw,2.5rem);line-height:1.12;letter-spacing:-.01em;font-weight:800;margin:0 0 14px;max-width:22ch}
+.lead{color:var(--muted);max-width:62ch;margin:0 0 32px}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.three>div,.pairs>div{border-top:3px solid var(--green);padding-top:14px}
+h3{font-size:1.15rem;font-weight:800;margin:0 0 6px;line-height:1.25}
+.three p,.pairs p{margin:0;color:var(--muted);max-width:44ch}
+.scroll{overflow-x:auto;border-radius:4px}
+table{width:100%;min-width:680px;border-collapse:collapse;background:var(--surface)}
+th{background:var(--road);color:var(--paint);text-align:left;padding:13px 16px;font-weight:800}
+td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{font-weight:800}
+td.n{color:var(--muted)}
+.pairs{display:grid;grid-template-columns:repeat(2,1fr);gap:30px 44px}
+.stripe>div{border-top:0;border-left:7px solid var(--yellow);padding:2px 0 2px 16px}
+.six{grid-template-columns:repeat(3,1fr)}
+
+/* contact */
+.contact{background:var(--road);color:var(--paint);margin-top:84px}
+.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;padding:60px 0 56px}
+.contact h2{max-width:14ch}
+.contact p{color:var(--dim);margin:0 0 10px;max-width:42ch}
+.num{display:block;color:var(--paint);font-size:clamp(1.9rem,4.6vw,3rem);font-weight:800;line-height:1.15;text-decoration:none;border-bottom:4px solid var(--yellow);width:max-content;max-width:100%;margin-bottom:6px}
+.num:hover{background:rgba(242,194,0,.14)}
+.tag{display:block;color:var(--dim);font-size:.95rem;margin:0 0 22px}
+address{font-style:normal;color:var(--paint);font-weight:600}
+footer{border-top:1px solid #333840;padding:20px 0 28px;color:var(--dim);font-size:.9rem}
+footer p{margin:0 0 6px;max-width:80ch}
+
+@media (max-width:860px){
+ .hero-grid,.c-grid{grid-template-columns:1fr;gap:32px}
+ .three,.six{grid-template-columns:1fr}
+ .pairs{grid-template-columns:1fr}
+ .nav a.l{display:none}
+}
+
+.dh{margin:44px 0 6px;font-size:1.4rem}
+.lead.dl{margin-bottom:20px}
+.docs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.doc{all:unset;box-sizing:border-box;display:block;width:100%;cursor:pointer;background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.doc:focus-visible{outline:3px solid #2f7df6;outline-offset:3px}
+.doc img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;background:#fff;border-bottom:4px solid var(--yellow)}
+.doc:hover img{filter:brightness(.96)}
+.cap{display:block;padding:12px 14px;color:var(--muted);font-size:.95rem;line-height:1.35}
+.cap b{display:block;color:var(--ink);font-weight:800;margin-bottom:2px}
+dialog{width:min(94vw,920px);max-height:92vh;padding:0;border:0;border-radius:6px;background:#fff;overflow:auto}
+dialog::backdrop{background:rgba(10,12,15,.78)}
+dialog img{display:block;width:100%;height:auto}
+dialog .x{position:sticky;top:0;float:right;margin:10px;z-index:1;background:var(--yellow);color:#17191d;border:0;border-radius:4px;padding:8px 14px;font:800 1rem "Overpass",system-ui,sans-serif;cursor:pointer}
+@media (max-width:860px){.docs{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:420px){.docs{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+ <div class="wrap">
+  <div class="top">
+   <a class="brand" href="#top"><span class="mark">JR</span><span>World Group Inc</span></a>
+   <nav class="nav" aria-label="Main">
+    <a class="l" href="#services">Services</a>
+    <a class="l" href="#tracking">Tracking</a>
+    <a class="l" href="#credentials">Credentials</a>
+    <a class="btn y" href="tel:+18003815188">Call now</a>
+   </nav>
+  </div>
+  <div class="hero-grid" id="top">
+   <div>
+    <h1>Redefining freight with 24/7 precision.</h1>
+    <p class="sub">JR World Group Inc is a licensed freight broker. We connect your loads with a vetted carrier network in all 50 states and track every shipment from pickup to delivery.</p>
+    <div class="cta">
+     <a class="btn y" href="tel:+18003815188">Call (800) 381-5188</a>
+     <a class="btn o" href="#credentials">See our credentials</a>
+    </div>
+   </div>
+   <div class="sign" role="group" aria-label="Operating authority">
+    <div class="sign-in">
+     <p class="s-name">JR World Group Inc</p>
+     <p class="s-id"><small>Broker authority</small>MC 1469441</p>
+     <p class="s-id"><small>Federal registration</small>USDOT 3949658</p>
+     <hr class="s-rule">
+     <p class="s-line">Bonded and insured. All 50 states, Canada and Mexico.</p>
+     <p class="plate">24/7 tracking on every load</p>
+    </div>
+   </div>
+  </div>
+ </div>
+</header>
+
+<main>
+ <section class="sec">
+  <div class="wrap">
+   <h2>One call connects your freight to a vetted carrier network</h2>
+   <p class="lead">Complex shipping demands go in. Compliant, professional carriers move them. You get clear communication in between.</p>
+   <div class="three">
+    <div><h3>Strategic footprint</h3><p>Coverage across the entire US, with cross-border service into Canada and Mexico.</p></div>
+    <div><h3>Operational agility</h3><p>Scalable solutions for full truckload and partial needs.</p></div>
+    <div><h3>Vetted network</h3><p>Carriers are selected rigorously for compliance before they handle your freight.</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="sec" id="services">
+  <div class="wrap">
+   <h2>From LTL to specialized heavy haul</h2>
+   <p class="lead">A versatile carrier network and specialized equipment handling for different shipping requirements.</p>
+   <div class="scroll">
+    <table>
+     <thead><tr><th>Service</th><th>Equipment and capability</th><th>Focus</th></tr></thead>
+     <tbody>
+      <tr><td>Dry van, flatbed, stepdeck, reefer</td><td class="n">53' standard trailers</td><td class="n">Nationwide retail and consumer goods</td></tr>
+      <tr><td>LTL and partial</td><td class="n">Consolidation and cross-docking</td><td class="n">Cost optimization for smaller loads</td></tr>
+      <tr><td>Heavy haul</td><td class="n">Multi-axle and specialized rigs</td><td class="n">Industrial machinery and oversized freight</td></tr>
+      <tr><td>Cross-border</td><td class="n">Managed customs clearance</td><td class="n">US–Canada–Mexico transit</td></tr>
+      <tr><td>Last mile</td><td class="n">Lift gate and dedicated delivery</td><td class="n">Final-destination precision</td></tr>
+     </tbody>
+    </table>
+   </div>
+  </div>
+ </section>
+
+ <section class="sec" id="tracking">
+  <div class="wrap">
+   <h2>Tracking that takes the guesswork out</h2>
+   <p class="lead">Digital brokerage tools give you full transparency from pickup to final delivery.</p>
+   <div class="pairs stripe">
+    <div><h3>Proactive updates</h3><p>Continuous monitoring reduces the need for manual check calls.</p></div>
+    <div><h3>GPS verification</h3><p>Real-time GPS keeps carriers accountable and on route.</p></div>
+    <div><h3>Exception management</h3><p>You’re notified right away about any transit disruption, and resolution starts immediately.</p></div>
+    <div><h3>Customer portal</h3><p>Tracking data you can open any time, for shipments where the stakes are high.</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="sec" id="why">
+  <div class="wrap">
+   <h2>What a reliable broker changes</h2>
+   <p class="lead">Strategic carrier management and rate negotiation that protect your margins when capacity gets tight.</p>
+   <div class="pairs six">
+    <div><h3>Rate stability</h3><p>Historical data and market trends help us negotiate fair, consistent pricing.</p></div>
+    <div><h3>Capacity assurance</h3><p>Priority access to a vetted carrier base during peak seasonal demand.</p></div>
+    <div><h3>Cost reduction</h3><p>We look for consolidation opportunities through our LTL and partial truckload expertise.</p></div>
+    <div><h3>Less overhead</h3><p>Hand off carrier vetting, insurance tracking, and payment management.</p></div>
+    <div><h3>On-time focus</h3><p>Streamlined communication speeds up loading and unloading across every equipment type.</p></div>
+    <div><h3>Room to grow</h3><p>Add shipping volume without adding internal headcount.</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="sec" id="credentials">
+  <div class="wrap">
+   <h2>Verify us before you ship</h2>
+   <p class="lead">Look up our authority in the <a href="https://safer.fmcsa.dot.gov/">FMCSA database</a> with MC 1469441 or USDOT 3949658. Certificates, bond paperwork, and our W-9 are available on request.</p>
+   <div class="scroll">
+    <table>
+     <thead><tr><th>Document</th><th>Details</th><th>Period</th></tr></thead>
+     <tbody>
+      <tr><td>FMCSA broker license</td><td class="n">MC-1469441-B. Property broker, freight except household goods.</td><td class="n">Issued Sept 29, 2022</td></tr>
+      <tr><td>Broker surety bond (BMC-84)</td><td class="n">$75,000 with Jet Insurance Company. Obligee: FMCSA.</td><td class="n">Sept 19, 2026 to Sept 19, 2028</td></tr>
+      <tr><td>Contingent motor truck cargo</td><td class="n">$100,000 limit, $2,500 deductible. Certain Underwriters at Lloyd’s.</td><td class="n">June 24, 2026 to June 24, 2027</td></tr>
+      <tr><td>Contingent broker auto liability</td><td class="n">$1,000,000 / $2,000,000. Certain Underwriters at Lloyd’s.</td><td class="n">June 24, 2026 to June 24, 2027</td></tr>
+     </tbody>
+    </table>
+   </div>
+   <h3 class="dh">The documents</h3>
+   <p class="lead dl">Tap a document to open it full size.</p>
+   <ul class="docs">
+    <li><button type="button" class="doc" data-t="FMCSA broker license"><img src="docs/broker-license.jpg" alt="FMCSA broker license letter for JR World Group Inc, MC-1469441-B" loading="lazy"><span class="cap"><b>FMCSA broker license</b>MC-1469441-B, issued Sept 29, 2022</span></button></li>
+    <li><button type="button" class="doc" data-t="Contingent cargo and auto liability"><img src="docs/cargo-auto-insurance.jpg" alt="Certificate of liability insurance showing contingent broker auto liability and contingent motor truck cargo" loading="lazy"><span class="cap"><b>Contingent cargo and auto liability</b>Valid to June 24, 2027</span></button></li>
+    <li><button type="button" class="doc" data-t="BMC-84 surety bond renewal"><img src="docs/bmc84-bond.jpg" alt="Renewal confirmation for the $75,000 BMC-84 broker surety bond" loading="lazy"><span class="cap"><b>BMC-84 surety bond renewal</b>$75,000, valid to Sept 19, 2028</span></button></li>
+    <li><button type="button" class="doc" data-t="Bond power of attorney"><img src="docs/bond-power-of-attorney.jpg" alt="Jet Insurance Company power of attorney for the surety bond" loading="lazy"><span class="cap"><b>Bond power of attorney</b>Jet Insurance Company</span></button></li>
+   </ul>
+   <dialog id="viewer" aria-label="Document viewer"><button type="button" class="x">Close</button><img alt=""></dialog>
+  </div>
+ </section>
+</main>
+
+<section class="contact" id="contact">
+ <div class="wrap">
+  <div class="c-grid">
+   <div>
+    <h2>Got a load to move?</h2>
+    <p>Call with the lane, the equipment, and the pickup date. We’ll take it from there.</p>
+    <p>Tracking and operations run 24/7.</p>
+   </div>
+   <div>
+    <a class="num" href="tel:+18003815188">(800) 381-5188</a>
+    <span class="tag">Main line</span>
+    <a class="num" href="tel:+18882494085">(888) 249-4085</a>
+    <span class="tag">Toll free. Fax 206-858-9818.</span>
+    <address>JR World Group Inc<br>3131 Almond Blossom Ln<br>Roseville, CA 95747</address>
+   </div>
+  </div>
+  <footer>
+   <p>© 2026 JR World Group Inc. www.jrworldg.com</p>
+   <p>Licensed property broker, MC-1469441-B. We arrange transportation of freight (except household goods) and are not a motor carrier.</p>
+  </footer>
+ </div>
+</section>
+
+<script>
+(function(){
+  var v=document.getElementById("viewer");
+  if(!v||!v.showModal){return;}
+  var big=v.querySelector("img");
+  document.querySelectorAll(".doc").forEach(function(b){
+    b.addEventListener("click",function(){
+      var i=b.querySelector("img");
+      big.src=i.src;big.alt=i.alt;
+      v.showModal();v.scrollTop=0;
+    });
+  });
+  v.querySelector(".x").addEventListener("click",function(){v.close();});
+  v.addEventListener("click",function(e){if(e.target===v){v.close();}});
+})();
+</script>
+</body>
+</html>
